@@ -20,4 +20,4 @@ def snmpdxd():
 
 while True:
 	snmpdxd()
-	time.sleep(100)
+	time.sleep(600)
