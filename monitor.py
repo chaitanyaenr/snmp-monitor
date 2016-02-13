@@ -15,9 +15,12 @@ def snmpdxd():
 
 			output = subprocess.check_output(command)
                	 	output = output.split()
-                	print "output:", output[-1]           
+                	print output[-1]           
 	return
 
-while True:
-	snmpdxd()
+
+for i in INTERFACES:
+	print (i)
+	print "////////////////////"
+	snmpdxd();
 	time.sleep(600)
