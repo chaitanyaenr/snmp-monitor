@@ -13,14 +13,10 @@ def snmpdxd():
               			 "-c", "public",
               			 "128.138.207.5:7777",
               			 "%s.%d" % (DEVICES[devices],interfaces)]
-
 			output = subprocess.check_output(command)
                	 	output = output.split()
-                	print output[-1]
-			           
+                	print output[-1]	           
 	return
-
-
 for i in COUNT:
 	print (i)
 	print "***************************"
